@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Test_Sandi>
+            <version>0.17.14</version>
+        </Test_Sandi>
+    </modules>
+    <global>
+        <blocks>
+            <tweaks>
+                <class>Test_Sandi_Block</class>
+            </tweaks>
+            <catalog>
+                <rewrite>
+                    <product_list_toolbar>Test_Sandi_Block_Product_List_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <models>
+            <test_sandi>
+                <class>Test_Sandi_Model</class>
+                <resourceModel>test_sandi_resource</resourceModel>
+            </test_sandi>
+            <test_sandi_resource>
+                <class>Test_Sandi_Model_Resource</class>
+                <entities>
+                    <brand>
+                        <table>test_sandi_brand</table>
+                    </brand>
+                </entities>
+            </test_sandi_resource>
+            <catalog>
+                <rewrite>
+                    <config>Test_Sandi_Model_Catalog_Config</config>
+                </rewrite>
+            </catalog>
+        </models>
+        <resources>
+            <test_sandi_setup>
+                <setup>
+                    <module>Test_Sandi</module>
+                </setup>
+            </test_sandi_setup>
+        </resources>
+    </global>
+
+</config>
